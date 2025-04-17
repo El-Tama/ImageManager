@@ -1,6 +1,5 @@
 package com.example.imagemanager.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -53,6 +52,16 @@ fun ImageManagerTheme(
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
+        content = content
+    )
+}
+
+@Composable
+fun TwyperTheme(content: @Composable () -> Unit) {
+    MaterialTheme(
+        colorScheme = DarkColorScheme,
+        typography = Typography,
+        shapes = Shapes,
         content = content
     )
 }

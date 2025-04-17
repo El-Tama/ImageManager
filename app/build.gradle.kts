@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.imagemanager"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.imagemanager"
@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.twyper)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
